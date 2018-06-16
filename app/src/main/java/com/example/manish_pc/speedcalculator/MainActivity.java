@@ -22,14 +22,6 @@ public class MainActivity extends AppCompatActivity implements MyLocationUpdate.
         myLocationUpdate = new MyLocationUpdate(this, locationManager);
     }
 
-
-    /*public static float round(float d, int decimalPlace) {
-        BigDecimal bd = new BigDecimal(Float.toString(d));
-        bd = bd.setScale(decimalPlace, BigDecimal.ROUND_HALF_UP);
-        return bd.floatValue();
-    }*/
-
-
     @Override
     public void myLocationChange(Location location) {
         Log.d("location", "" + location.getSpeed());
